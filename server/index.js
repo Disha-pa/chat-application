@@ -47,14 +47,15 @@ const User = mongoose.model('User', UserSchema);
 
 const app = express();
 const server = http.createServer(app);
+const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000', // React dev server
+    origin: FRONTEND_URL, // Allow deployed frontend
     methods: ['GET', 'POST']
   }
 });
 
-app.use(cors());
+app.use(cors({ origin: FRONTEND_URL }));
 app.use(express.json());
 
 let onlineUsers = new Set();
