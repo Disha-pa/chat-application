@@ -47,7 +47,7 @@ const User = mongoose.model('User', UserSchema);
 
 const app = express();
 const server = http.createServer(app);
-const FRONTEND_URL = process.env.FRONTEND_URL || 'https://chat-application-1-gznm.onrender.com';
+const FRONTEND_URL = 'https://chat-application-1-gznm.onrender.com';
 const io = new Server(server, {
   cors: {
     origin: FRONTEND_URL, // Allow deployed frontend
