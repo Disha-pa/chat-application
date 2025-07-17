@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-const backendUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const backendUrl = process.env.REACT_APP_API_URL || 'https://chat-application-olp7.onrender.com';
 const socket = io(backendUrl);
 
 function getRandomColor() {
