@@ -1,0 +1,46 @@
+/* Light theme (default) */
+:root {
+  --bg-main: #fff;
+  --bg-sidebar: #f7f7f7;
+  --bg-chat: #ece5dd;
+  --bg-header: #075E54;
+  --bg-message-own: #dcf8c6;
+  --bg-message-other: #fff;
+  --color-text: #222;
+  --color-header: #fff;
+  --color-link: #075E54;
+  --color-border: #eee;
+  --color-input: #f0f0f0;
+  --color-typing: #888;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-main);
+  color: var(--color-text);
+}
+
+.dark {
+  --bg-main: #181a20;
+  --bg-sidebar: #23272f;
+  --bg-chat: #20232a;
+  --bg-header: #222c36;
+  --bg-message-own: #2e3a2f;
+  --bg-message-other: #23272f;
+  --color-text: #e0e0e0;
+  --color-header: #fff;
+  --color-link: #25D366;
+  --color-border: #333;
+  --color-input: #23272f;
+  --color-typing: #aaa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
